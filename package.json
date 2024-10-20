@@ -1,5 +1,5 @@
 {
-  "name": "default-config",
+  "name": "@devanshdeveloper/default-config",
   "version": "1.0.0",
   "description": "A lib for managing custom configs",
   "main": "dist/esm/index.js",
@@ -12,11 +12,11 @@
     "watch:cjs": "tsc --outDir dist/cjs --module commonjs --watch",
     "watch:esm": "tsc --outDir dist/esm --module esnext --watch",
     "watch": "npm run watch:esm & npm run watch:cjs",
-    "publish": "git add . && git commit -m /\"code updated\"/ && git push && npm publish"
+    "publish": "git add . && git commit -m /\"code updated\"/ && git push && npm publish --access=public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devanshdeveloper/json-to-pdf.git"
+    "url": "https://github.com/devanshdeveloper/default-config.git"
   },
   "keywords": [
     "Configuration Management",
