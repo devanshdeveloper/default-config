@@ -1,0 +1,49 @@
+{
+  "name": "default-config",
+  "version": "1.0.0",
+  "description": "A lib for managing custom configs",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build:cjs": "tsc --outDir dist/cjs --module commonjs",
+    "build:esm": "tsc --outDir dist/esm --module esnext",
+    "build": "npm run build:cjs && npm run build:esm",
+    "watch:cjs": "tsc --outDir dist/cjs --module commonjs --watch",
+    "watch:esm": "tsc --outDir dist/esm --module esnext --watch",
+    "watch": "npm run watch:esm & npm run watch:cjs",
+    "publish": "git add . && git commit -m /\"code updated\"/ && git push && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devanshdeveloper/json-to-pdf.git"
+  },
+  "keywords": [
+    "Configuration Management",
+    "TypeScript",
+    "Zod",
+    "Dynamic Configuration",
+    "Deep Merging",
+    "Configuration Validation",
+    "Nested Configuration",
+    "Type Safety",
+    "JSON Configuration",
+    "Environment Variables",
+    "Application Settings",
+    "Schema Validation",
+    "Configurable Application",
+    "Key-Value Store",
+    "Object Merging",
+    "Modular Configuration",
+    "Runtime Configuration",
+    "Config Manager",
+    "Typesafe Config",
+    "JavaScript Configuration"
+  ],
+  "author": "Devansh Khetwani",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.0.0",
+    "zod": "^3.23.8"
+  }
+}
